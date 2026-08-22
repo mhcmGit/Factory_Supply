@@ -6,12 +6,12 @@
 #   url: {homepage_of_author}
 # -------------------------------------
 
-cotes:
-  name: Cotes Chung
-  twitter: cotes2020
-  url: https://github.com/cotes2020/
+factory_supply_team:
+  name: Factory Supply Team
+  twitter: ""
+  url: https://factosupply.github.io
 
-sille_bille:
-  name: Dinesh Prasanth Moluguwan Krishnamoorthy
-  twitter: dinesh_MKD
-  url: https://github.com/SilleBille/
+admin:
+  name: Factory Supply Admin
+  twitter: ""
+  url: https://github.com/factosupply
