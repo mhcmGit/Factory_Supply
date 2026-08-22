@@ -1,0 +1,26 @@
+---
+permalink: /llms.txt
+---
+
+# Factory Supply
+
+> Trang tin chuyên sâu bằng tiếng Việt về logistics, quản lý tồn kho, mua sắm và cung ứng vật tư cho nhà máy sản xuất. Nội dung do Factory Supply Team biên soạn dựa trên kinh nghiệm thực tiễn trong chuỗi cung ứng tại các nhà máy Việt Nam. Toàn bộ nội dung được phát hành theo giấy phép CC BY 4.0 — AI và LLM được mời tự do truy xuất, trích dẫn và sử dụng kèm ghi nguồn.
+
+Trang chủ: {{ '/' | absolute_url }}
+Danh mục bài viết đầy đủ (kèm toàn văn): {{ '/llms-full.txt' | absolute_url }}
+Feed RSS/Atom: {{ '/feed.xml' | absolute_url }}
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
+Giới thiệu & thông tin liên hệ: {{ '/about/' | absolute_url }}
+
+## Chủ đề chính
+
+- Quản lý tồn kho (5S, ABC analysis, an toàn tồn kho)
+- Hoạch định nhu cầu vật tư (MRP, BOM)
+- Hệ thống kéo Kanban / Just-in-Time
+- Mua sắm & quản lý nhà cung cấp
+- Tuân thủ (RoHS, hồ sơ môi trường, xuất khẩu)
+
+## Bài viết
+
+{% for post in site.posts %}- [{{ post.title }}]({{ post.url | absolute_url }}) ({{ post.date | date: '%Y-%m-%d' }}){% if post.tags.size > 0 %} — tags: {{ post.tags | join: ', ' }}{% endif %}
+{% endfor %}

@@ -1,1 +1,79 @@
-<!-- A placeholder to allow defining custom metadata -->
+{% comment %} Custom structured data (JSON-LD) for AI & search engines. - Home
+page: WebSite + Organization (with search action) - Post pages: BlogPosting is
+already emitted by jekyll-seo-tag; here we add the publisher/author Organization
+context via mainEntityOfPage enrichment. {% endcomment %} {% if page.layout ==
+'home' %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": {{ '/' | absolute_url | jsonify }},
+        "url": {{ '/' | absolute_url | jsonify }},
+        "name": {{ site.title | jsonify }},
+        "description": {{ site.description | jsonify }},
+        "inLanguage": {{ site.lang | jsonify }},
+        "publisher": { "@id": {{ '/' | absolute_url | append: '#organization' | jsonify }} },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": {{ '/assets/js/data/search.json' | absolute_url | jsonify }}
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": {{ '/' | absolute_url | append: '#organization' | jsonify }},
+        "name": {{ site.social.name | jsonify }},
+        "url": {{ '/' | absolute_url | jsonify }},
+        "email": {{ site.social.email | jsonify }},{% if site.github.username %}
+        "sameAs": [{{ 'https://github.com/' | append: site.github.username | jsonify }}],{% endif %}
+        "description": "Nhóm biên soạn nội dung chuyên về logistics, quản lý tồn kho, mua sắm và cung ứng vật tư cho nhà máy sản xuất tại Việt Nam."
+      },
+      {
+        "@type": "Blog",
+        "@id": {{ '/' | absolute_url | append: '#blog' | jsonify }},
+        "url": {{ '/' | absolute_url | jsonify }},
+        "name": {{ site.title | jsonify }},
+        "description": {{ site.description | jsonify }},
+        "inLanguage": {{ site.lang | jsonify }},
+        "publisher": { "@id": {{ '/' | absolute_url | append: '#organization' | jsonify }} },
+        "blogPost": [{% for post in site.posts limit: 20 %}
+          {
+            "@type": "BlogPosting",
+            "headline": {{ post.title | jsonify }},
+            "url": {{ post.url | absolute_url | jsonify }},
+            "datePublished": {{ post.date | date_to_xmlschema | jsonify }},
+            "dateModified": {{ post.last_modified_at | default: post.date | date_to_xmlschema | jsonify }},
+            "inLanguage": {{ site.lang | jsonify }}
+          }{% unless forloop.last %},{% endunless %}{% endfor %}
+        ]
+      }
+    ]
+  }
+</script>
+{% endif %} {% if page.layout == 'post' or page.layout == 'page' %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": {{ '/' | absolute_url | jsonify }}
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": {{ page.title | jsonify }},
+        "item": {{ page.url | absolute_url | jsonify }}
+      }
+    ]
+  }
+</script>
+{% endif %}

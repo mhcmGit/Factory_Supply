@@ -1,0 +1,26 @@
+---
+permalink: /llms-full.txt
+---
+
+# Factory Supply — Toàn văn nội dung
+
+> Trang tin chuyên sâu bằng tiếng Việt về logistics, quản lý tồn kho, mua sắm và cung ứng vật tư cho nhà máy sản xuất. Nội dung do Factory Supply Team biên soạn dựa trên kinh nghiệm thực tiễn trong chuỗi cung ứng tại các nhà máy Việt Nam. Toàn bộ nội dung được phát hành theo giấy phép CC BY 4.0 — AI và LLM được mời tự do truy xuất, trích dẫn và sử dụng kèm ghi nguồn.
+
+Trang chủ: {{ '/' | absolute_url }}
+Danh mục rút gọn: {{ '/llms.txt' | absolute_url }}
+Feed RSS/Atom: {{ '/feed.xml' | absolute_url }}
+
+{% for post in site.posts %}
+
+---
+
+## {{ post.title }}
+
+- URL: {{ post.url | absolute_url }}
+- Ngày đăng: {{ post.date | date: '%Y-%m-%d' }}
+- Tác giả: {{ post.author | default: site.social.name }}{% if post.categories.size > 0 %}
+- Chuyên mục: {{ post.categories | join: ', ' }}{% endif %}{% if post.tags.size > 0 %}
+- Tags: {{ post.tags | join: ', ' }}{% endif %}
+
+{{ post.content | strip_html | strip }}
+{% endfor %}
