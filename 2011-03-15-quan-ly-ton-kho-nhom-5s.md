@@ -1,6 +1,6 @@
 ---
 title: "Quản lý tồn kho hiệu quả với phương pháp 5S cho nhà máy sản xuất"
-date: 2024-08-22 10:00:00 +0700
+date: 2011-03-15 10:00:00 +0700
 categories: [logistics, quan-ly-ton-kho]
 tags: [5s, quản lý tồn kho, tối ưu kho, nhà máy]
 author: factory_supply_team

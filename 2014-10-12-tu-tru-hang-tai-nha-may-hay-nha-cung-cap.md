@@ -1,6 +1,6 @@
 ---
 title: "Nên trữ hàng tại nhà máy hay nhờ nhà cung cấp trữ hàng? Góc nhìn chuyên gia về quản trị tồn kho thông minh"
-date: 2024-08-25 09:00:00 +0700
+date: 2014-10-12 09:00:00 +0700
 categories: [logistics, quan-ly-ton-kho]
 tags: [tồn kho, consignment, VMI, nhà phân phối, trữ hàng, nhà máy]
 author: factory_supply_team

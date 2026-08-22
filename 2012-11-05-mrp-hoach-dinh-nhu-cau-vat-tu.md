@@ -1,6 +1,6 @@
 ---
 title: "MRP - Hoạch định nhu cầu vật tư: Trái tim của hệ thống cung ứng nhà máy sản xuất"
-date: 2024-08-23 09:00:00 +0700
+date: 2012-11-05 09:00:00 +0700
 categories: [logistics, hoach-dinh]
 tags: [MRP, BOM, hoạch định vật tư, ERP, sản xuất]
 author: factory_supply_team

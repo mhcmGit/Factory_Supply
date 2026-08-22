@@ -1,6 +1,6 @@
 ---
 title: "Kế hoạch mua sắm nguyên liệu: Cách xây dựng chiến lược cung ứng vững chắc"
-date: 2024-08-22 14:00:00 +0700
+date: 2011-09-20 14:00:00 +0700
 categories: [logistics, mua-sam]
 tags: [kế hoạch mua sắm, nguyên liệu, chiến lược cung ứng, nhà cung cấp]
 author: factory_supply_team

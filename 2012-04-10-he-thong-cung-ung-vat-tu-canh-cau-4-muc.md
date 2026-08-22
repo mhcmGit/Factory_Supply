@@ -1,6 +1,6 @@
 ---
 title: "Hệ thống cung ứng vật tư cho nhà máy: Mô hình cấp 4 cấp nên được biết"
-date: 2024-08-22 16:00:00 +0700
+date: 2012-04-10 16:00:00 +0700
 categories: [logistics, cung-ung-vat-tu]
 tags: [hệ thống cung ứng, vật tư nhà máy, ABC analysis]
 author: factory_supply_team

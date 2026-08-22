@@ -1,6 +1,6 @@
 ---
 title: "Kanban & Just-in-Time: Nghệ thuật hệ thống kéo (Pull System) trong cung ứng vật tư nhà máy"
-date: 2024-08-23 14:00:00 +0700
+date: 2013-06-18 14:00:00 +0700
 categories: [logistics, san-xuat]
 tags: [Kanban, JIT, Lean, hệ thống kéo, Toyota, WIP]
 author: factory_supply_team

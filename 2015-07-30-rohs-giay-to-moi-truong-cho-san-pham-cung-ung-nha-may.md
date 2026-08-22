@@ -1,6 +1,6 @@
 ---
 title: "RoHS là gì? Khi nào sản phẩm cung ứng vào nhà máy cần giấy tờ RoHS — và khi nào thì không?"
-date: 2024-08-26 09:00:00 +0700
+date: 2015-07-30 09:00:00 +0700
 categories: [logistics, tuan-thu]
 tags: [RoHS, môi trường, tuân thủ, compliance, nhà cung cấp, xuất khẩu]
 author: factory_supply_team

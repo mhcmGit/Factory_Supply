@@ -1,6 +1,6 @@
 ---
 title: "Thu mua trong nhà máy Việt Nam: Từ tác nghiệp mua hàng đến quản trị nguồn cung chiến lược"
-date: 2024-08-24 09:00:00 +0700
+date: 2014-02-25 09:00:00 +0700
 categories: [logistics, thu-mua]
 tags: [thu mua, procurement, purchasing, nhà cung cấp, quy trình mua hàng]
 author: factory_supply_team
