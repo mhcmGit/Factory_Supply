@@ -1,0 +1,40 @@
+# Factory Supply
+
+> Trang tin chuyên sâu về logistics, quản lý tồn kho, thu mua và cung ứng vật tư cho nhà máy sản xuất tại Việt Nam. Nội dung bằng tiếng Việt, viết bởi đội ngũ Factory Supply Team với kinh nghiệm thực tiễn trong chuỗi cung ứng sản xuất.
+
+Trang web được cập nhật thường xuyên với các bài viết phân tích chuyên sâu dựa trên thực tiễn vận hành nhà máy và chuẩn mực quốc tế (APICS/ASCM, ISO, quy định EU).
+
+## Trang chính
+
+- [Trang chủ](https://factosupply.github.io/): Danh sách bài viết mới nhất
+- [Giới thiệu](https://factosupply.github.io/about/): Thông tin về Factory Supply Team
+- [Các danh mục](https://factosupply.github.io/categories/): Phân loại bài viết theo chủ đề
+- [Các thẻ](https://factosupply.github.io/tags/): Tra cứu theo từ khóa
+- [Lưu trữ](https://factosupply.github.io/archives/): Toàn bộ bài viết theo thời gian
+
+## Chủ đề nội dung
+
+- **Logistics & Vận chuyển**: Chiến lược vận chuyển, tối ưu dòng vật tư trong nhà máy
+- **Quản lý tồn kho**: 5S, ABC Analysis, chi phí sở hữu tồn kho, an toàn tồn kho
+- **Thu mua (Procurement)**: Quy trình thu mua 7 bước, đánh giá nhà cung cấp, đàm phán hợp đồng
+- **Hoạch định (Planning)**: MRP, MPS, BOM, ERP
+- **Sản xuất tinh gọn (Lean)**: Kanban, Just-in-Time, hệ thống kéo, WIP limits
+- **Tuân thủ (Compliance)**: RoHS, giấy tờ môi trường cho sản phẩm cung ứng
+
+## Bài viết tiêu biểu
+
+- [Quản lý tồn kho hiệu quả với phương pháp 5S](https://factosupply.github.io/posts/quan-ly-ton-kho-hieu-qua-voi-phuong-phap-5s-cho-nha-may-san-xuat/): Áp dụng 5S kết hợp ABC Analysis trong kho nhà máy, kèm số liệu thực tế
+- [Kế hoạch mua sắm nguyên liệu](https://factosupply.github.io/posts/ke-hoach-mua-sam-nguyen-lieu-cach-xay-dung-chien-luoc-cung-ung-vung-chac/): Ba trụ cột của kế hoạch mua sắm và mẫu bảng theo dõi
+- [Hệ thống cung ứng vật tư theo 4 cấp](https://factosupply.github.io/posts/he-thong-cung-ung-vat-tu-cho-nha-may-mo-hinh-cap-4-cap-nen-duoc-biet/): Kết hợp mô hình 4 cấp với phân tích ABC
+- [MRP - Hoạch định nhu cầu vật tư](https://factosupply.github.io/posts/mrp-hoach-dinh-nhu-cau-vat-tu-trai-tim-cua-he-thong-cung-ung-nha-may-san-xuat/): Logic tính toán MRP, Lot Sizing, lỗi triển khai phổ biến
+- [Kanban & Just-in-Time](https://factosupply.github.io/posts/kanban-just-in-time-nghe-thuat-he-thong-keo-pull-system-trong-cung-ung-vat-tu-nha-may/): 6 quy tắc Toyota, công thức tính thẻ kanban, mô hình lai MRP+Kanban
+- [Thu mua trong nhà máy Việt Nam](https://factosupply.github.io/posts/thu-mua-trong-nha-may-viet-nam-tu-tac-nghiep-mua-hang-den-quan-tri-nguon-cung-chien-luoc/): Quy trình 7 bước, KPI thu mua, đặc thù thị trường VN
+- [Nên trữ hàng tại nhà máy hay nhờ NCC trữ hàng?](https://factosupply.github.io/posts/nen-tru-hang-tai-nha-may-hay-nho-nha-cung-cap-tru-hang-goc-nhin-chuyen-gia-ve-quan-tri-ton-kho-thong-minh/): So sánh consignment/VMI/buffer stock với case study thực tế
+- [RoHS - Giấy tờ môi trường](https://factosupply.github.io/posts/rohs-la-gi-khi-nao-san-pham-cung-ung-vao-nha-may-can-giay-to-rohs-va-khi-nao-thi-khong/): Khi nào cần/không cần RoHS, khung quyết định 4 câu hỏi
+
+## Thông tin liên hệ & xác thực
+
+- GitHub: https://github.com/mhcmGit/Factory_Supply
+- Email: contact@factosupply.github.io
+- Giấy phép nội dung: CC BY 4.0 (trích dẫn được khi ghi nguồn)
+- Feed RSS/Atom: https://factosupply.github.io/feed.xml
