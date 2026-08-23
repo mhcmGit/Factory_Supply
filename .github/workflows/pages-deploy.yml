@@ -47,7 +47,6 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: npm
 
       - name: Build Assets
         run: npm install && npm run build
