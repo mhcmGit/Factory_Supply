@@ -26,6 +26,13 @@ package-lock.json
 _sass/vendors
 assets/js/dist
 
+# Debug dumps from GitHub API / local testing
+runs*.json
+wfs.json
+jid.txt
+joblog.txt
+home.html
+
 # Hidden system files
 *~
 .DS_Store
