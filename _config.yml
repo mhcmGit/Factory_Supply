@@ -11,6 +11,11 @@ lang: vi
 # Change to your timezone › https://zones.arilyn.cc
 timezone: Asia/Ho_Chi_Minh
 
+# Publish posts regardless of whether their `date` is in the future.
+# Jekyll's default (`false`) hides future-dated posts (e.g. later on the same day),
+# which caused several articles dated later today to miss the build.
+future: true
+
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
