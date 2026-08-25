@@ -52,7 +52,14 @@ jobs:
         run: npm install && npm run build
 
       - name: Build Site
-        run: bundle exec jekyll b --baseurl "${{ steps.pages.outputs.base_path }}" -d "_site${{ steps.pages.outputs.base_path }}"
+        id: buildsite
+        continue-on-error: true # TEMP report, will be re-set strict after diagnosis
+        run: |
+          set +e
+          bundle exec jekyll b --baseurl "${{ steps.pages.outputs.base_path }}" -d "_site${{ steps.pages.outputs.base_path }}" > /tmp/jekyll.log 2>&1
+          ec=$?
+          { echo "### Jekyll build exit=$ec"; echo '```text'; cat /tmp/jekyll.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit $ec
         env:
           JEKYLL_ENV: "production"
 
