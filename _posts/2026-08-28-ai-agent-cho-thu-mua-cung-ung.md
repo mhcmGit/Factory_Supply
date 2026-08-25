@@ -9,7 +9,7 @@ author: factory_supply_team
 
 Nếu [AI trong logistics](/posts/ai-trong-logistics-cach-ap-dung-hieu-qua/) là câu chuyện về **dự báo và tối ưu**, thì làn sóng 2025–2026 mang đến một chương mới gây chấn động hơn: **AI Agent (agentic AI)** — phần mềm không chỉ *trả lời* hay *dự báo*, mà **tự lên kế hoạch, tự ra quyết định trong giới hạn, và tự thực hiện** chuỗi công việc mua hàng từ đầu đến cuối.
 
-Gartner gọi đây là "làn sóng agentic shift": phần mềm chuỗi cung ứng tích hợp agentic AI được dự báo tăng từ **dưới 2 tỷ USD (2025) lên 53 tỷ USD (2030)**; và dự đoán táo bạo hơn: đến **2028, AI Agent sẽ trực tiếp thực hiện các giao dịch B2B trị giá 15.000 tỷ USD**. Nhưng cùng Gartner cũng cảnh báo: **hơn 40% dự án agentic AI sẽ bị hủy trước hết 2027** vì chi phí đội lên, giá trị không rõ ràng và thiếu kiểm soát rủi ro.
+Gartner gọi đây là "làn sóng agentic shift": phần mềm chuỗi cung ứng tích hợp agentic AI được dự báo tăng từ **dưới 2 tỷ USD (2025) lên 53 tỷ USD (2030)**; và dự đoán táo bạo hơn: đến **2028, AI Agent sẽ trực tiếp thực hiện các giao dịch B2B trị giá 15.000 tỷ USD**. Nhưng cùng Gartner cũng cảnh báo: **hơn 40% dự án agentic AI sẽ bị hủy trước cuối 2027** vì chi phí leo thang, giá trị không rõ ràng và thiếu kiểm soát rủi ro.
 
 Bài này tách bạch hype khỏi thực tế: AI Agent là gì, vận hành thế nào, làm được gì cho phòng thu mua, rủi ro ở đâu — và lộ trình áp dụng đúng cho doanh nghiệp Việt Nam.
 
