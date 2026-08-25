@@ -19,78 +19,31 @@
 {% capture not_found %}<p class="mt-5">{{ site.data.locales[include.lang].search.no_results }}</p>{% endcapture %}
 
 <script>
-  {% comment %}
-    Customized, diacritics-insensitive search for Vietnamese.
-    Loads the same search.json index, normalises content & query with
-    NFKD + diacritic stripping so users can search with or without accents.
-  {% endcomment %}
+  {% comment %} Note: dependent library will be loaded in `js-selector.html` {% endcomment %}
   document.addEventListener('DOMContentLoaded', () => {
-    const input = document.getElementById('search-input');
-    const resultsContainer = document.getElementById('search-results');
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('search-results'),
+      json: '{{ '/assets/js/data/search.json' | relative_url }}',
+      searchResultTemplate: '{{ result_elem | strip_newlines }}',
+      noResultsText: '{{ not_found }}',
+      templateMiddleware: function(prop, value, template) {
+        if (prop === 'categories') {
+          if (value === '') {
+            return `${value}`;
+          } else {
+            return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+          }
+        }
 
-    const resultTemplate =
-      '<article class="px-1 px-sm-2 px-lg-4 px-xl-0">' +
-      '<header><h2><a href="{url}">{title}</a></h2>' +
-      '<div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">{categories}{tags}</div>' +
-      '</header><p>{content}</p></article>';
-
-    const noResultsHtml = '{{ not_found | strip_newlines | escape }}';
-
-    function removeDiacritics(str) {
-      return (str || '')
-        .normalize('NFKD')
-        .replace(/[\u0300-\u036f]/g, '');
-    }
-
-    let store = [];
-
-    fetch('{{ '/assets/js/data/search.json' | relative_url }}')
-      .then((res) => res.json())
-      .then((data) => {
-        store = data.map((item) => ({
-          url: item.url,
-          title: item.title,
-          categories: item.categories,
-          tags: item.tags,
-          content: item.content,
-          // normalised copy for matching
-          searchKey: removeDiacritics(
-            [item.title, item.categories, item.tags, item.content].join(' ')
-          ).toLowerCase()
-        }));
-      });
-
-    function render(items) {
-      if (!items.length) {
-        resultsContainer.innerHTML = noResultsHtml;
-        return;
+        if (prop === 'tags') {
+          if (value === '') {
+            return `${value}`;
+          } else {
+            return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+          }
+        }
       }
-
-      resultsContainer.innerHTML = items.map((item) => {
-        const cats = item.categories
-          ? `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${item.categories}</div>`
-          : '';
-        const tags = item.tags
-          ? `<div><i class="fa fa-tag fa-fw"></i>${item.tags}</div>`
-          : '';
-        return resultTemplate
-          .replace(/\{url\}/g, item.url)
-          .replace(/\{title\}/g, item.title)
-          .replace(/\{content\}/g, item.content)
-          .replace(/\{categories\}/g, cats)
-          .replace(/\{tags\}/g, tags);
-      }).join('');
-    }
-
-    input.addEventListener('input', () => {
-      const q = removeDiacritics(input.value.trim()).toLowerCase();
-      if (q === '') {
-        resultsContainer.innerHTML = '';
-        return;
-      }
-
-      const hits = store.filter((item) => item.searchKey.includes(q));
-      render(hits);
     });
   });
 </script>
