@@ -1,0 +1,67 @@
+backend:
+  name: github
+  repo: mhcmGit/Factory_Supply
+  branch: main
+  # Đăng nhập: dùng GitHub Personal Access Token (Fine-grained) dán trực tiếp
+  # tại màn hình login của /admin/ — không cần OAuth server/proxy.
+  # Token cần quyền Contents: Read and write cho repo này.
+
+site_url: https://mhcmGit.github.io/Factory_Supply
+display_url: https://mhcmGit.github.io/Factory_Supply
+locale: 'vi'
+
+# Ảnh upload sẽ lưu vào assets/img/posts và hiển thị đúng với basepath /Factory_Supply
+media_folder: 'assets/img/posts'
+public_path: '/Factory_Supply/assets/img/posts'
+
+publish_mode: simple
+
+collections:
+  - name: 'posts'
+    label: 'Bài viết'
+    label_singular: 'Bài viết'
+    folder: '_posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    sortable_fields:
+      - 'date'
+      - 'title'
+    summary: '{{title}} – {{date | date("dd/MM/yyyy")}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Tiêu đề'
+        name: 'title'
+        widget: 'string'
+        hint: 'Tiêu đề hiển thị trên trang và trong thẻ SEO'
+      - label: 'Mô tả (SEO description)'
+        name: 'description'
+        widget: 'text'
+        required: false
+        hint: 'Tóm tắt 1–2 câu, hiển thị khi chia sẻ trên mạng xã hội / Google'
+      - label: 'Ngày & giờ đăng'
+        name: 'date'
+        widget: 'datetime'
+        format: 'YYYY-MM-DD HH:mm:ss ZZ'
+        date_format: 'DD/MM/YYYY'
+        time_format: 'HH:mm'
+      - label: 'Chuyên mục (categories)'
+        name: 'categories'
+        widget: 'list'
+        min: 1
+        max: 3
+        default: ['quan-ly-chat-luong']
+        hint: 'Chữ thường, không dấu, phân tách bằng gạch nối. Ví dụ: quan-ly-chat-luong, san-xuat, logistics, thu-mua'
+      - label: 'Thẻ (tags)'
+        name: 'tags'
+        widget: 'list'
+        required: false
+        add_label: 'Thêm thẻ'
+      - label: 'Tác giả'
+        name: 'author'
+        widget: 'hidden'
+        default: 'factory_supply_team'
+      - label: 'Nội dung bài viết (Markdown)'
+        name: 'body'
+        widget: 'markdown'
+        buttons: [bold, italic, link, heading-two, heading-three, heading-four, quote, code, bulleted-list, numbered-list]
