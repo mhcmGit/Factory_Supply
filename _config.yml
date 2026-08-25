@@ -29,10 +29,10 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://factosupply.github.io"
+url: "https://mhcmGit.github.io"
 
 github:
-  username: factosupply # change to your GitHub username
+  username: mhcmGit # change to your GitHub username
 
 twitter:
   username: # change to your Twitter/X username
@@ -41,11 +41,11 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Factory Supply Team
-  email: contact@factosupply.github.io # change to your email address
+  email: contact@mhcmgit.github.io # change to your email address
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/factosupply # change to your GitHub homepage
+    - https://github.com/mhcmGit # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -117,7 +117,7 @@ actions:
   # Display "Edit this post" action on each post page to encourage contributions.
   edit_post:
     enabled: true # set to true to display the "Edit this post" action.
-    url: "https://github.com/factosupply/FactoSupply/edit/main"
+    url: "https://github.com/mhcmGit/Factory_Supply/edit/main"
     static_url: false # [ true | false ]
 
 comments:

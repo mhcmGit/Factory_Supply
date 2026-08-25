@@ -69,10 +69,10 @@ Bạn muốn chia sẻ kinh nghiệm hoặc bài viết mới? Vui lòng:
 
 This project is licensed under the [MIT License][license].
 
-[badge-license]: https://img.shields.io/github/license/factosupply/FactoSupply?color=goldenrod
+[badge-license]: https://img.shields.io/github/license/mhcmGit/Factory_Supply?color=goldenrod
 [badge-gem]: https://img.shields.io/gem/v/jekyll-theme-chirpy?&logo=RubyGems&logoColor=ghostwhite&label=gem&color=orange
-[badge-pages]: https://img.shields.io/github/actions/workflow/status/factosupply/FactoSupply/pages-deploy.yml?logo=github
-[license]: https://github.com/factosupply/FactoSupply/blob/main/LICENSE
+[badge-pages]: https://img.shields.io/github/actions/workflow/status/mhcmGit/Factory_Supply/pages-deploy.yml?logo=github
+[license]: https://github.com/mhcmGit/Factory_Supply/blob/main/LICENSE
 [gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[pages]: https://factosupply.github.io/FactoSupply/
-[demo]: https://factosupply.github.io/FactoSupply/
+[pages]: https://mhcmGit.github.io/Factory_Supply/
+[demo]: https://mhcmGit.github.io/Factory_Supply/
